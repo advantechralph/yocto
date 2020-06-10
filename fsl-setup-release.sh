@@ -207,12 +207,12 @@ else
     echo "BBLAYERS += \" \${BSPDIR}/sources/meta-advantech/meta-WISE-PaaS \"" >> $BUILD_DIR/conf/bblayers.conf
 fi
 
-if [ -e ../sources/meta-wise710a1 ]; then
-    echo "BBLAYERS += \" \${BSPDIR}/sources/meta-wise710a1 \"" >> $BUILD_DIR/conf/bblayers.conf
+if [ -e ../sources/meta-tpc71wn10pa ]; then
+    echo "BBLAYERS += \" \${BSPDIR}/sources/meta-tpc71wn10pa \"" >> $BUILD_DIR/conf/bblayers.conf
 fi
 
-if [ -e ../sources/meta-wise710a1/meta-bsp-patch ]; then
-    echo "BBLAYERS += \" \${BSPDIR}/sources/meta-wise710a1/meta-bsp-patch \"" >> $BUILD_DIR/conf/bblayers.conf
+if [ -e ../sources/meta-tpc71wn10pa/meta-bsp-patch ]; then
+    echo "BBLAYERS += \" \${BSPDIR}/sources/meta-tpc71wn10pa/meta-bsp-patch \"" >> $BUILD_DIR/conf/bblayers.conf
 fi
 
 echo "BBLAYERS += \" \${BSPDIR}/sources/meta-advantech/meta-fsl-imx6 \"" >> $BUILD_DIR/conf/bblayers.conf
