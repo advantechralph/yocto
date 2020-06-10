@@ -9,14 +9,12 @@
   <remote fetch="https://github.com/ADVANTECH-Corp" name="meta-advantech"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <project name="yocto.git" path="wise710a1" remote="advantechiiot" revision="project/wise710a1" upstream="project/wise710a1" clone-depth="1">
+  <project name="yocto.git" path="tpc71wn10pa" remote="advantechiiot" revision="project/tpc71wn10pa" upstream="project/tpc71wn10pa" clone-depth="1">
     <linkfile dest="fsl-setup-release.sh" src="fsl-setup-release.sh"/>
     <linkfile dest="setup-environment" src="setup-environment"/>
-    <linkfile dest="create_build_ubc220a1.sh" src="create_build_ubc220a1.sh"/>
-    <linkfile dest="create_build_wise710a1.sh" src="create_build_wise710a1.sh"/>
     <linkfile dest="README-IMXBSP" src="README-IMXBSP"/>
   </project>
-  <project name="yocto.git" path="sources/meta-wise710a1" remote="advantechiiot" revision="meta/wise710a1" upstream="meta/wise710a1" clone-depth="1"/>
+  <project name="yocto.git" path="sources/meta-tpc71wn10pa" remote="advantechiiot" revision="meta/tpc71wn10pa" upstream="meta/tpc71wn10pa" clone-depth="1"/>
   <project name="fsl-community-bsp-base" path="sources/base" remote="freescale" revision="3f3f63f5dd6bc62cbe7ea8ba779a07754bec4584" upstream="krogoth" clone-depth="1">
     <copyfile dest="README" src="README"/>
   </project>
