@@ -47,7 +47,6 @@ Subject: [PATCH] patch for tpc71wn10pa
  ...71wn10pa_4x_MT41K128M16JT-125_1410022609-01.cfg |   222 +
  ...c71wn21pa_4x_IM4G16D3FABG-125_1410025137-01.cfg |   253 +
  board/freescale/mx6advantech/plugin.S              |   219 +
- board/freescale/mx6advantech/plugin.bin            |   Bin 0 -> 1060 bytes
  board/freescale/mx6sabresd/plugin.S                |   217 +
  ...L_2GB_2rank_IM4G16D3FABG-125I_20180919_v1_2.cfg |   108 -
  board/freescale/mx7dadvantech/Kconfig              |    13 -
@@ -141,7 +140,6 @@ Subject: [PATCH] patch for tpc71wn10pa
  create mode 100755 board/freescale/mx6advantech/mx6tpc71wn10pa_4x_MT41K128M16JT-125_1410022609-01.cfg
  create mode 100755 board/freescale/mx6advantech/mx6tpc71wn21pa_4x_IM4G16D3FABG-125_1410025137-01.cfg
  mode change 100755 => 100644 board/freescale/mx6advantech/plugin.S
- create mode 100644 board/freescale/mx6advantech/plugin.bin
  delete mode 100644 board/freescale/mx7dadvantech/EBC-RM01_DDR3L_2GB_2rank_IM4G16D3FABG-125I_20180919_v1_2.cfg
  delete mode 100644 board/freescale/mx7dadvantech/Kconfig
  delete mode 100644 board/freescale/mx7dadvantech/MAINTAINERS
@@ -24249,29 +24247,6 @@ index a45487f..ccc6b4f
  .macro imx6_ddr_setting
  #if defined (CONFIG_MX6SOLO)
  	imx6solosabresd_ddr_setting
-diff --git a/board/freescale/mx6advantech/plugin.bin b/board/freescale/mx6advantech/plugin.bin
-new file mode 100644
-index 0000000000000000000000000000000000000000..2322fb749bd3ba1d25343dc3d04d9bc8d0c0ca34
-GIT binary patch
-literal 1060
-zcmb7?&r1|x7{{NP-OR(1qb@n<)=spPVT<Dr$iUb^3C*+yGU!mSkVFRy2@f7DXUc<+
-z;6h$wC+gTiNWw$GMjku}Nq7+IkUPF$HzAM0_L*(}ffhb|p7%S?`^>vDlXkMdomf$s
-zMnRc&LB(3Xgj%Z~nue#6WJ#-_^rRmqS*PgJ%pmNg){G$R!!A8fPx+xsEzL#c;5=EZ
-zQ7d03&quivgqky7*6YT@qe`VUni1{Y(2LCXxbMGOm}xb6YK7dVj`l`%tR)DiTbM&O
-zj&1xt$u*dO0*sO`<ESUVQO_z~gGsLG+|#Y?{X|xRb=ZJS*n(}?fv7iM>z%+;FaxvT
-z!8|O&Fig=u4Kpwc9?Zi6EW)8yREKAZO4>bjfD_n&{l=*FseSc}yr1kRcJNMh?W^tT
-z+E-h6n0&KpUu|HQ^?KF5D&Z7s3o_6SDdt*`fp*Y4f^dy|je42>IM2O+>+vE^;00{p
-zc^ti$d)Xi~v3?;4Q+SH}BA&!HK5qq~gY&Ef-^EeiotnpMc55E3`6Oqt=yO<`oXO-&
-zebmvJdLw6ekIar{y_2HK@T?y4Em(LGr|=Xu@ib228EoKLoWLHQW^bI@pcWi`(<vBg
-zSSk;tm&#W=m&(I-5Q_6kHQ|_y@2=ay+mao8s3+^Kbnd2|&--yVtM*;~qwA@?s(rOu
-z^>d|35XRltd#C9YC!vd%(CfUFxX1}zq)m^><u_?bi#Tn1TDJzCX~*@1t_?iV9%y4X
-z#zwBWH%Gdz^yfM*^>z2~%Ze_x-6PGn26OjcKK}SaD%$sRB4>?35ovwV?Mb}H6Y28e
-zVtdvxhjmM%CXa6GQfFwA%atT{WQ&w44I&3Q`BRavA`O+8$TxyHnUhRCqyFRf7l*j6
-AfdBvi
-
-literal 0
-HcmV?d00001
-
 diff --git a/board/freescale/mx6sabresd/plugin.S b/board/freescale/mx6sabresd/plugin.S
 index a45487f..01787bc 100644
 --- a/board/freescale/mx6sabresd/plugin.S
