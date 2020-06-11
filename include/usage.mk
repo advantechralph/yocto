@@ -30,7 +30,7 @@ Usage:
   If you want to change the working directory for downloads, sstate_cache 
   and tmp folder location, please define 'YOCTO_WORK_DIR'. 
   ex: 
-    $$ YOCTO_WORK_DIR=/root/imx-linux-warrior make prepare
+    $$ YOCTO_WORK_DIR=/root/imx-linux-krogoth make prepare
 
   Currently, YOCTO_WORK_DIR=$(shell if [ -f "$(yoctodir)/$(yoctobuilddir)/conf/extra-local.conf" ] ; then source $(yoctodir)/$(yoctobuilddir)/conf/extra-local.conf; echo $$DL_DIR| sed -e 's/\/downloads$$//'; fi)
 
