@@ -40,4 +40,3 @@ export usage_str
 usage help: 
 	@echo "$${usage_str}"
 
-default: usage; 
