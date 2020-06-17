@@ -4,7 +4,7 @@ export SHELL=bash
 #           path           #
 ############################
 builddir:=$(CURRDIR)/build
-sharedir:=$(CURRDIR)/share
+sharedir:=$(builddir)/share
 workdir:=/disk/workssd/advantechralph/workdir/krogoth
 logdir:=$(builddir)/log
 ############################
